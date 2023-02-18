@@ -21,6 +21,9 @@ const bookSchema:Schema = new Schema(
       endDate: {
          type:String
       }
+   },
+   {
+      timestamps:true
    }
 )
 
