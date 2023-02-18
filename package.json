@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@types/mongoose": "^5.11.97",
-    "mongoose": "^6.9.2"
+    "mongoose": "^6.9.2",
+    "node-dependency-injection": "^3.0.5"
   }
 }
