@@ -1,6 +1,6 @@
-import { Document, ObjectId } from "mongoose";
-
-export default interface IMaster extends Document {
+import { ObjectId } from "mongoose";
+import IBase from "./base";
+export default interface IMaster extends IBase{
     fullName: string,
     phoneNumber: string,
     brandName: string,

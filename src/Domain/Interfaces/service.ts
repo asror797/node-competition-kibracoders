@@ -1,5 +1,4 @@
-import { Document } from "mongoose"
-
-export interface IService extends Document {
+import IBase from "./base"
+export interface IService extends IBase {
    title:string
 }

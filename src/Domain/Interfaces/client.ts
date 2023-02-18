@@ -1,6 +1,6 @@
 import { Document } from "mongoose";
-
-export interface Clients extends Document{
-  fullName:string;
-  phoneNumber:string;
+import IBase from "./base";
+export interface Clients extends IBase {
+  fullName: string;
+  phoneNumber: string;
 }

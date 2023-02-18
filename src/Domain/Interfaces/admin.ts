@@ -1,6 +1,7 @@
 import { Document } from "mongoose";
+import IBase from "./base";
 
-export interface Admin extends Document{
-  adminName:string;
-  password:string;
+export interface Admin extends IBase {
+  adminName: string;
+  password: string;
 }
