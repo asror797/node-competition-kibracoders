@@ -14,6 +14,9 @@ const bookSchema:Schema = new Schema(
          ref:'Client',
          required:'true'
       },
+      status:{
+
+      },
       startDate: {
          type:String,
          required:true

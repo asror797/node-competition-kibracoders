@@ -6,4 +6,5 @@ export interface IBook extends Document {
    clientId:string
    startDate:string
    endDate:string
+   status:string
 }
