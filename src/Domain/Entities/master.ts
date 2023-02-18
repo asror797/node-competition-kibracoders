@@ -1,5 +1,5 @@
 import {model, Model, Schema} from "mongoose";
-import IMaster from "../Interfaces/IMaster";
+import IMaster from "../Interfaces/master";
 
 
 export const masterSchema = new Schema<IMaster>({
