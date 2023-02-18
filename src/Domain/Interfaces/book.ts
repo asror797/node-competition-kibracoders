@@ -1,11 +1,8 @@
-import { Document } from "mongoose"
-
-
-
-export interface IBook extends Document {
-   masterId:string
-   clientId:string
-   startDate:string
-   endDate:string
-   status:string
+import IBase from "./base"
+export interface IBook extends IBase {
+   masterId: string
+   clientId: string
+   startDate: string
+   endDate: string
+   status: string
 }
