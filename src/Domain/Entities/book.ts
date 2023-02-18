@@ -15,7 +15,9 @@ const bookSchema:Schema = new Schema(
          required:'true'
       },
       status:{
-
+         type:String,
+         required:true,
+         enum:['pending','proccesing','canceled']
       },
       startDate: {
          type:String,
