@@ -33,7 +33,8 @@ export const masterSchema = new Schema<IMaster>({
     },
     service: {
         type: Schema.Types.ObjectId,
-        required: true
+        required: true,
+        ref: "Service"
     }
 })
 
