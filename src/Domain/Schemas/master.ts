@@ -36,8 +36,4 @@ export const masterSchema = new Schema<IMaster>({
         required: true,
         ref: "Service"
     }
-})
-
-
-
-export const masterModel = model<IMaster>("Master", masterSchema);
+});

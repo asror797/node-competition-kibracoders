@@ -1,7 +1,7 @@
 import { model, Schema } from "mongoose";
 import {Trip} from '../Interfaces/trip'
 
-const tripSchema:Schema = new Schema(
+export const tripSchema:Schema = new Schema(
   {
     masterId:{
       type:Schema.Types.ObjectId,
@@ -19,6 +19,4 @@ const tripSchema:Schema = new Schema(
     }
 
   }
-)
-
-export const tripModel = model<Trip & Document>('Trip', tripSchema)
+);

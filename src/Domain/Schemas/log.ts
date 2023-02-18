@@ -21,6 +21,4 @@ export const logSchema = new Schema<ILog>(
     {
         timestamps: true
     }
-)
-
-export const logModel = model("Log", logSchema);
+);

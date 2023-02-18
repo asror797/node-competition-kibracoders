@@ -1,7 +1,7 @@
 import {model, Schema} from "mongoose";
 import { Clients } from "../Interfaces/client";
 
-const clientSchema: Schema = new Schema(
+export const clientSchema: Schema = new Schema(
   {
     fullName:{
       type:String,
@@ -12,6 +12,4 @@ const clientSchema: Schema = new Schema(
       required:true
     }
   }
-)
-
-export const clientModel = model<Clients & Document>('Client', clientSchema)
+);

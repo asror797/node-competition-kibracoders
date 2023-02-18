@@ -1,8 +1,7 @@
 import { connect } from "mongoose";
-import { } from "node-dependency-injection";
 import ConfigurationManager from "../Config/configurationManager";
 
-class DataAccess {
+export default class DataAccess {
     /**
      *
      */
@@ -11,7 +10,8 @@ class DataAccess {
         this.configManager = configManager;
     }
 
-    private async ConnectToDb() {
+    public async ConnectToDb() {
+        console.log(this.configManager.GetValue("ConnectionString"));
         try {
             (await connect(this.configManager.GetValue("ConnectionString")))
         } catch (error) {
@@ -20,3 +20,4 @@ class DataAccess {
         }
     }
 }
+

@@ -24,6 +24,7 @@ export default class ConfigurationManager {
             throw error;
         }
     }
+
     public GetValue(key: string): string {
         return Object.entries(this.config).find(x => x[0] == key)?.[1] as string;
     }

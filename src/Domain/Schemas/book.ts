@@ -2,7 +2,7 @@ import { model, Schema } from "mongoose";
 import { IBook } from "../Interfaces/book";
 
 
-const bookSchema:Schema = new Schema(
+export const bookSchema:Schema = new Schema(
    {
       masterId: {
          type: Schema.Types.ObjectId,
@@ -30,9 +30,5 @@ const bookSchema:Schema = new Schema(
    {
       timestamps:true
    }
-)
+);
 
-const bookModel = model<IBook & Document>('Book',bookSchema)
-
-
-export default bookModel;
