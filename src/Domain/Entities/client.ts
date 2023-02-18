@@ -3,7 +3,7 @@ import { Clients } from "../Interfaces/client";
 
 const clientSchema: Schema = new Schema(
   {
-    fullNumber:{
+    fullName:{
       type:String,
       required:true
     },
